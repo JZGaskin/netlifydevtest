@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, button } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -15,6 +15,10 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <br />
+    <a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_G8SqaSR2Myfql0knkuh23KeKk1RARUw9&scope=read_write">
+      Stripe Connect
+    </a>
   </Layout>
 )
 
